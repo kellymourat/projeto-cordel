@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+* {  /* tirando toda margin do site*/
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em; 
+
+}
+
+:root {
+   --fonte-padrao:  Verdana, 'Geneva', Tahoma, sans-serif;
+   --fonte-passion: 'Passion One', 'cursive';
+   --font-google: "Sriracha", 'cursive';
+}
+
+html, body {
+     min-height: 100vh; /* tamanho min do meu html e body*/
+     background-color: darkgrey;
+     font-family: var(--fonte-padrao);
+         
+}
+
+header {
+     background-color: black;
+     color: white;
+     text-align: center;
+       
+}
+
+header h1 {
+     padding-top: 50px; /* distancia da parte superior */
+     font-variant: small-caps; /* texto maiúsculo, primeira letra destacada */
+     font-family: var(--fonte-passion);
+     font-size: 10vw; /* texto se adapta ao tamanho da tela*/
+}
+
+header p {
+     padding-bottom: 50px; /*distância da parte de baixo*/     
+}
+
+header a {
+    color: white;
+    text-decoration: none; 
+    font-weight: bolder; /*fonte em negrito*/
+}
+
+header a:hover {
+     text-decoration: underline;
+
+}
+
+section { /*configuração foi a base do conteudo, cria largura de 10vh entre os textos, torna o site adaptável. */
+     padding-top: 10vh;
+     padding-bottom: 10vh;
+     line-height: 2em; /* espaçamento entre o texto*/
+     padding-left: 30px;
+     font-size: 3.5vw; /* 5% vw texto se adapta conforme o tamanho da tela*/
+}
+
+section > pre { /* pre usado no lugar <br>*/
+     font-family: var(--font-google);
+     white-space: pre-line;
+     padding-bottom: 2em; /* distancia de um paragrafo para o outro*/
+
+}
+
+section.estrofe {
+     background-color: white;
+     color: black;
+           
+}
+
+section.imagem {
+       color: white;
+       box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.301);/*fundo com sombra nas bordas*/
+       
+      
+}
+
+section.imagem pre {
+     background-color: rgba(0, 0, 0, 0.61);
+     display:inline-block; /* box se adapta conforme o tamanho da tela*/
+     padding-top: 5px;
+     font-family: var(--font-google);        
+}
+
+section#fundo1 {
+      background: url('../imagens/background001.jpg') right center fixed; 
+      background-size: cover;
+     
+}
+
+section#fundo2  {
+     background: url('../imagens/background002.jpg') right center fixed;
+     background-size: cover;
+     
+
+}
+
+footer {
+     background-color: black;
+     color: white;
+     text-align: center;
+     padding: 4px;
+} 
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: rgb(229, 243, 167);
+}  
+    
